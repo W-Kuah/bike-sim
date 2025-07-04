@@ -1,5 +1,5 @@
 package org.bikesim.simulator;
 
-// Executes commands and manages bike state.
+// Executes commands and interfaces between bike state and grid state.
 public class Simulator {
 }
