@@ -6,30 +6,61 @@ import org.bikesim.enums.Direction;
 public class Bike {
     private int x;
     private int y;
-    private Direction direction;
+    private Direction facing;
 
-    public int[] getPos() {
-        return new int[] {x,y};
+    public void place(int x, int y, Direction facing) {
+        this.x = x;
+        this.y = y;
+        this.facing = facing;
     }
 
-    public void move() {
-        switch (direction) {
+    private int[] showNextPos(int oldX, int oldY){
+        int newX = oldX;
+        int newY = oldY;
+        switch (facing) {
             case NORTH:
-                y--;
+                newY--;
                 break;
 
             case SOUTH:
-                y++;
+                newY++;
                 break;
 
             case EAST:
-                x++;
+                newX++;
                 break;
 
             case WEST:
-                x--;
+                newX--;
                 break;
         }
+        return new int[] {newX, newY};
     }
+
+    public void forward() {
+        int[] newXY = showNextPos(x,y);
+        this.x = newXY[0];
+        this.y = newXY[0];
+    }
+
+    public void turnLeft() {
+        this.facing = facing.left();
+    }
+
+    public void turnRight() {
+        this.facing = facing.right();
+    }
+
+    // Getter methods
+    public int[] getPos() {
+        return new int[] {x,y};
+    }
+    public int[] getNextPos() {
+        return showNextPos(x,y);
+    }
+
+
+
+
 
 }
