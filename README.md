@@ -41,15 +41,17 @@ FORWARD
 GPS_REPORT
 Output: (0,6), NORTH
 
-plaintext
+```
 
+```plaintext
 PLACE 0,0,NORTH
 TURN_LEFT
 GPS_REPORT
 Output: (0,0), WEST
 
-plaintext
+```
 
+```plaintext
 PLACE 1,2,EAST
 FORWARD
 FORWARD
@@ -57,6 +59,7 @@ TURN_LEFT
 FORWARD
 GPS_REPORT
 Output: (3,3), NORTH
+```
 
 Design Notes
 
