@@ -40,7 +40,7 @@ public class Simulator {
 
         int[] pos = vehicle.getPos();
         Direction facing = vehicle.getDir();
-        String formattedStr = String.format("(%d, %d), %s", pos[0], pos[1], facing.name());
+        String formattedStr = String.format("(%d,%d), %s", pos[0], pos[1], facing.name());
         System.out.println(formattedStr);
     }
 }

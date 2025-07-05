@@ -14,11 +14,11 @@ public class Bike {
         int newY = oldY;
         switch (facing) {
             case NORTH:
-                newY--;
+                newY++;
                 break;
 
             case SOUTH:
-                newY++;
+                newY--;
                 break;
 
             case EAST:

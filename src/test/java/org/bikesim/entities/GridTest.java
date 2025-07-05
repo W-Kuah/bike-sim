@@ -1,10 +1,21 @@
 package org.bikesim.entities;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GridTest {
+
+    private final ByteArrayOutputStream outputCaptor = new ByteArrayOutputStream();
+    @BeforeEach
+    void setUp() {
+        System.setOut(new PrintStream(outputCaptor));
+    }
+
 
     @Test
     void testHeight_shouldBe9() {
