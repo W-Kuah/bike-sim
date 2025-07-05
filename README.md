@@ -34,7 +34,7 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
    ```bash
    bash run.sh example1.txt
    ```   
-5. **OR Read from STDIN**  
+   **OR Read from STDIN**  
    ```bash
    bash run.sh
    (Type commands manually, press `Ctrl+D` to end input)
