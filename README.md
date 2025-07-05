@@ -69,11 +69,11 @@ Output: (3,3), NORTH
 ```
 
 ## Design Notes
-- Validation: All commands before first valid PLACE are ignored
+- Validation: All commands before the first valid PLACE are ignored
 - Safety: Movements that would exit the grid are silently skipped
 - Re-PLACE: Multiple PLACE commands allowed after initial placement
 - Case Sensitivity: Commands and directions are case-insensitive
-- Error Handling: Malformed inputs are print without crashing
+- Error Handling: Malformed inputs are printed without crashing
 
 File Structure
 ```
