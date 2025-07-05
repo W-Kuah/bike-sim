@@ -13,21 +13,22 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SimulatorTest {
     private Simulator simulator;
-    private final ByteArrayOutputStream outputCaptor = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream outputCapture = new ByteArrayOutputStream();
+
+    // Helper function
+    private String getReportOutput() {
+        return outputCapture.toString().trim();
+    }
 
     @BeforeEach
     void setUp() {
         simulator = new Simulator();
-        System.setOut(new PrintStream(outputCaptor));
+        System.setOut(new PrintStream(outputCapture));
     }
 
     @AfterEach
     void tearDown() {
-        outputCaptor.reset();
-    }
-
-    private String getReportOutput() {
-        return outputCaptor.toString().trim();
+        outputCapture.reset();
     }
 
     @Test
@@ -106,7 +107,7 @@ public class SimulatorTest {
         simulator.turnVehicleLeft();   // Should face SOUTH
         simulator.vehicleReport();
         String afterLeft = getReportOutput();
-        outputCaptor.reset();
+        outputCapture.reset();
 
         simulator.turnVehicleRight();  // Back to WEST
         simulator.turnVehicleRight();  // Face NORTH

@@ -24,6 +24,12 @@
             <artifactId>mockito-core</artifactId>
             <version>5.7.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -40,12 +46,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.3</version>
                 <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
+<!--                    <skipTests>true</skipTests>-->
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>
