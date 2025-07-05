@@ -33,7 +33,7 @@ public class Bike {
     }
 
     // Setter methods
-     void place(int x, int y, Direction facing) {
+     public void place(int x, int y, Direction facing) {
         this.x = x;
         this.y = y;
         this.facing = facing;
