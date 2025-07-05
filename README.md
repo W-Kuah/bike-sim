@@ -21,6 +21,7 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 **Grid Boundaries**: X and Y coordinates must be between 0-6 inclusive
 
 ## How to Run
+0. Ensure you have Maven installed (https://maven.apache.org/install.html)
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/W-Kuah/bike-sim/
