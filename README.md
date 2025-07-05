@@ -124,5 +124,18 @@ bike-simulation/
 ├── pom.xml
 └── README.md
 ```
-Testing
-Sample test files are included in test-inputs/ directory. Run with:
+## Testing
+Sample test files are included in the test-inputs/ directory. Run with:
+   ```bash
+   bash run.sh input-tests/example1.txt
+   ```
+   ```bash
+   bash run.sh input-tests/example2.txt
+   ```
+   ```bash
+   bash run.sh input-tests/example3.txt
+   ```
+Alternatively, you may add your own file to the input-tests.
+   ```bash
+   bash run.sh input-tests/your-file.txt
+   ```
