@@ -8,12 +8,7 @@ public class Bike {
     private int y;
     private Direction facing;
 
-    public void place(int x, int y, Direction facing) {
-        this.x = x;
-        this.y = y;
-        this.facing = facing;
-    }
-
+    // Helper method
     private int[] showNextPos(int oldX, int oldY){
         int newX = oldX;
         int newY = oldY;
@@ -37,10 +32,17 @@ public class Bike {
         return new int[] {newX, newY};
     }
 
+    // Setter methods
+     void place(int x, int y, Direction facing) {
+        this.x = x;
+        this.y = y;
+        this.facing = facing;
+    }
+
     public void forward() {
         int[] newXY = showNextPos(x,y);
         this.x = newXY[0];
-        this.y = newXY[0];
+        this.y = newXY[1];
     }
 
     public void turnLeft() {
@@ -52,6 +54,9 @@ public class Bike {
     }
 
     // Getter methods
+    public Direction getDir() {
+        return facing;
+    }
     public int[] getPos() {
         return new int[] {x,y};
     }
