@@ -10,6 +10,8 @@ public class Simulator {
     private final Bike vehicle = new Bike();
     private boolean isVehiclePlaced = false;
 
+
+    // Command Methods;
     public void placeVehicle(int x, int y, Direction direction) {
         if (grid.isValidPos(x, y)) {
             vehicle.place(x, y, direction);
