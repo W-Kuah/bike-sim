@@ -1,5 +1,4 @@
-# Bike Grid Simulation
-
+# Bike Grid Simulation (Assignment)
 A Java application that simulates a bike moving on a 7x7 grid, preventing exits beyond grid boundaries while responding to movement and directional commands.
 
 ## Features
@@ -20,7 +19,36 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 **Valid Directions**: NORTH, SOUTH, EAST, WEST  
 **Grid Boundaries**: X and Y coordinates must be between 0-6 inclusive
 
-## How to Run
+## How to Run For Non-Developers (Mac OSX only).
+Note that I do not usually uploaded artifact as it is not good practice, 
+but I felt this would provide a smoother experiences for non-developers to run the app.
+
+1. Navigate to this https://github.com/W-Kuah/bike-sim/
+2. Click on the 'Code' green button and download zip.![Screenshot 2025-07-06 at 6.59.25 am.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fgh%2F8d05wbbs5xvfkvm78ltt8h840000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_LCPvP0%2FScreenshot%202025-07-06%20at%206.59.25%E2%80%AFam.png)
+![Screenshot 2025-07-06 at 6.59.54 am.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fgh%2F8d05wbbs5xvfkvm78ltt8h840000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_hOHUYY%2FScreenshot%202025-07-06%20at%206.59.54%E2%80%AFam.png)
+3. Unzip the file and copy the name of the unzip folder to your clipboard.
+e.g.
+```plaintext
+/Users/your-name/Downloads/bike-sim-main/
+```
+- On Mac OSX you can do this by right-clicking on the folder and holding down the option button and "Copy <foldername> as Pathname".
+4. Open your terminal app (Mac).
+![Screenshot 2025-07-06 at 7.11.37 am.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fgh%2F8d05wbbs5xvfkvm78ltt8h840000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_3S10Xv%2FScreenshot%202025-07-06%20at%207.11.37%E2%80%AFam.png)
+
+5. Type 'cd ' in the command line and copy and paste your path and enter
+e.g. cd /Users/your-name/Downloads/bike-sim-main/
+
+6. Run bash.sh
+   ```bash
+   bash run.sh
+   ```
+   
+7. If you want test a text file try:
+   ```bash
+   bash run.sh example1.txt
+   ```
+
+## How to Run For Developers
 0. Ensure you have Maven installed (https://maven.apache.org/install.html)
 1. **Clone the repository**  
    ```bash
@@ -31,14 +59,29 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
    ```bash
    bash install.sh
    ```
+   OR
+   ```bash
+   mvn clean install
+   dependency:copy-dependencies
+   mvn package
+   ```
    
 4. **Run with input file**
    ```bash
    bash run.sh input-tests/example1.txt
    ```
+   OR
+   ```bash
+   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp input-tests/example1.txt
+   ```
+   
    **...OR Read from STDIN**  
    ```bash
    bash run.sh
+   ```
+   OR
+   ```bash
+   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp
    ```
    (Type commands manually, press `Ctrl+D` to end input)
    
