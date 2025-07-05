@@ -14,8 +14,20 @@ public class PlaceCommand implements Command {
         this.y = y;
         this.direction = direction;
     }
+
+    // Getter
+    public int getX(){
+        return x;
+    }
+    public int getY(){
+        return y;
+    }
+
+    public Direction getDir(){
+        return direction;
+    }
     @Override
     public void execute(Simulator simulator) {
-//        simulator.placeVehicle(x, y, direction);
+        simulator.placeVehicle(x, y, direction);
     }
 }

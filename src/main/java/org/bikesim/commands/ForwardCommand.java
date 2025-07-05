@@ -6,6 +6,6 @@ import org.bikesim.simulator.Simulator;
 public class ForwardCommand implements Command {
     @Override
     public void execute(Simulator simulator) {
-//        simulator.moveVehicleForward();
+        simulator.moveVehicleForward();
     }
 }

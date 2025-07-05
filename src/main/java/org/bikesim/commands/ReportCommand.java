@@ -6,6 +6,6 @@ import org.bikesim.simulator.Simulator;
 public class ReportCommand implements Command {
     @Override
     public void execute(Simulator simulator) {
-//        simulator.vehicleReport();
+        simulator.vehicleReport();
     }
 }

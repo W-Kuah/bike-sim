@@ -14,6 +14,8 @@ public class CommandParser {
             return new ForwardCommand();
         } else if ("TURN_LEFT".equals(normalized)) {
             return new TurnLeftCommand();
+        } else if ("TURN_RIGHT".equals(normalized)) {
+            return new TurnRightCommand();
         } else if ("GPS_REPORT".equals(normalized)) {
             return new ReportCommand();
         }

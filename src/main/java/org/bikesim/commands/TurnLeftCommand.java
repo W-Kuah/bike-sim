@@ -6,6 +6,6 @@ import org.bikesim.simulator.Simulator;
 public class TurnLeftCommand implements Command {
     @Override
     public void execute(Simulator simulator) {
-//        simulator.turnVehicleLeft();
+        simulator.turnVehicleLeft();
     }
 }
