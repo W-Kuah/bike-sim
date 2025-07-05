@@ -23,7 +23,7 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 ## How to Run
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/W-Kuah/bike-sim/edit/main/README.md
+   git clone https://github.com/W-Kuah/bike-sim/
    ```
 
 3. **Compile from the project root**
