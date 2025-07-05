@@ -30,10 +30,11 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
    ```bash
    bash install.sh
    ```
+   
 4. **Run with input file**
    ```bash
-   bash run.sh example1.txt
-   ```   
+   bash run.sh input-tests/example1.txt
+   ```
    **...OR Read from STDIN**  
    ```bash
    bash run.sh
@@ -75,7 +76,53 @@ Output: (3,3), NORTH
 - Error Handling: Malformed inputs are print without crashing
 
 File Structure
-code
-
+```
+bike-simulation/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── org/
+│   │   │       └── bikesim/
+│   │   │           ├── enum/
+│   │   │           │   └── Direction.java
+│   │   │           ├── entities/
+│   │   │           │   ├── Bike.java
+│   │   │           │   ├── Grid.java
+│   │   │           ├── command/
+│   │   │           │   ├── Command.java
+│   │   │           │   ├── ForwardCommand.java
+│   │   │           │   ├── PlaceCommand.java
+│   │   │           │   ├── ReportCommand.java
+│   │   │           │   ├── TurnLeftCommand.java
+│   │   │           │   └── TurnRightCommand.java
+│   │   │           ├── parser/
+│   │   │           │   └── CommandParser.java
+│   │   │           ├── simulator/
+│   │   │           │   └── Simulator.java
+│   │   │           └── BikeSimApp.java
+│   │   └── resources/
+│   └── test/
+│       ├── java/
+│       │   └── org/
+│       │       └── bikesim/
+│       │           ├── enum/
+│       │           │   └── DirectionTest.java
+│       │           ├── entities/
+│       │           │   ├── BikeTest.java
+│       │           │   ├── GridTest.java
+│       │           ├── parser/
+│       │           │   └── CommandParserTest.java
+│       │           ├── simulator/
+│       │           │   └── SimulatorTest.java
+│       │           └── BikeSimAppTest.java
+│       └── resources/
+│
+├── input-tests/
+│   ├── example1.txt
+│   ├── example2.txt
+│   └── example3.txt
+├── pom.xml
+└── README.md
+```
 Testing
 Sample test files are included in test-inputs/ directory. Run with:
