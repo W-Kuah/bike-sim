@@ -51,6 +51,7 @@ e.g. cd /Users/your-name/Downloads/bike-sim-main/
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/W-Kuah/bike-sim/
+   cd bike-sim
    ```
 
 3. **Compile from the project root**
