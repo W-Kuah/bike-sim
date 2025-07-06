@@ -4,8 +4,8 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 ## Features
 - **Grid Environment**: 7x7 grid where (0,0) is the southwest corner
 - **Command Handling**: Processes PLACE, FORWARD, TURN_LEFT, TURN_RIGHT, and GPS_REPORT commands
-- **Safety Checks**: Prevents bike from moving outside the grid boundaries
-- **Robust Input Handling**: Ignores invalid commands and requires initial valid PLACE
+- **Safety Checks**: Prevents the bike from moving outside the grid boundaries
+- **Robust Input Handling**: Ignores invalid commands and requires an initial valid PLACE
 
 ## Commands
 | Command                 | Description                                  | Example                   |
@@ -19,9 +19,9 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 **Valid Directions**: NORTH, SOUTH, EAST, WEST  
 **Grid Boundaries**: X and Y coordinates must be between 0-6 inclusive
 
-## How to Run For Non-Developers (Mac OSX only).
-Note that I do not usually uploaded artifact as it is not good practice, 
-but I felt this would provide a smoother experiences for non-developers to run the app.
+## How to Run For Non-Developers.
+Note that I do not usually upload artifacts, as it is not good practice. 
+However, I felt this would provide a smoother experience for non-developers to run the app.
 
 1. Navigate to this https://github.com/W-Kuah/bike-sim/
 2. Click on the 'Code' green button and download zip.
@@ -31,21 +31,29 @@ e.g.
 /Users/your-name/Downloads/bike-sim-main/
 ```
 - On Mac OSX you can do this by right-clicking on the folder and holding down the option button and "Copy <foldername> as Pathname".
-4. Open your terminal app (Mac).
+- On Windows, follow the instructions on this link: https://www.wikihow.com/Find-a-File's-Path-on-Windows
+4. Open your terminal app (Mac) or PowerShell (PC).
 
-5. Type 'cd ' in the command line and copy and paste your path and enter
+5. Type 'cd ' in the command line and copy and paste your path, and enter
 e.g. cd /Users/your-name/Downloads/bike-sim-main/
 
 6. Run bash.sh
    ```bash
-   bash run.sh
+   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp
+   ```
+- If on Mac OSX, you can choose to run the following instead:
+   ```bash
+   bash install.sh
    ```
    
-7. If you want test a text file try:
+7. If you want to test a text file, try:
    ```bash
-   bash run.sh example1.txt
+   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp input-tests/example1.txt
    ```
-
+- If on Mac OSX, you can choose to run the following instead:
+   ```bash
+   bash install.sh input-tests/example1.txt
+   ```
 ## How to Run For Developers
 0. Ensure you have Maven installed (https://maven.apache.org/install.html)
 1. **Clone the repository**  
@@ -178,7 +186,7 @@ Sample test files are included in the test-inputs/ directory. Run with:
    ```bash
    bash run.sh input-tests/example3.txt
    ```
-Alternatively, you may add your own file to the input-tests.
+Alternatively, you may add your file to the input-tests.
    ```bash
    bash run.sh input-tests/your-file.txt
    ```
