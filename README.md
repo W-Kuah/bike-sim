@@ -1,4 +1,4 @@
-# Bike Grid Simulation (Assignment)
+![image](https://github.com/user-attachments/assets/b892f790-7aa7-4496-98d6-35e1bde27176)# Bike Grid Simulation (Assignment)
 A Java application that simulates a bike moving on a 7x7 grid, preventing exits beyond grid boundaries while responding to movement and directional commands.
 
 ## Features
@@ -25,7 +25,7 @@ However, I felt this would provide a smoother experience for non-developers to r
 
 1. Navigate to this https://github.com/W-Kuah/bike-sim/
 2. Click on the 'Code' green button and download zip.
-3. Unzip the file and copy the name of the unzipped folder to your clipboard.
+3. Unzip the file and copy the path of the unzipped folder to your clipboard.
 e.g.
 ```plaintext
 /Users/your-name/Downloads/bike-sim-main/
