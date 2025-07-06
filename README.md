@@ -168,7 +168,7 @@ bike-simulation/
 │       │           └── BikeSimAppTest.java
 │       └── resources/
 │
-├── input-tests/
+├── test-inputs/
 │   ├── example1.txt
 │   ├── example2.txt
 │   └── example3.txt
@@ -178,15 +178,15 @@ bike-simulation/
 ## Testing
 Sample test files are included in the test-inputs/ directory. Run with:
    ```bash
-   bash run.sh input-tests/example1.txt
+   bash run.sh test-inputs/example1.txt
    ```
    ```bash
-   bash run.sh input-tests/example2.txt
+   bash run.sh test-inputs/example2.txt
    ```
    ```bash
-   bash run.sh input-tests/example3.txt
+   bash run.sh test-inputs/example3.txt
    ```
 Alternatively, you may add your file to the input-tests.
    ```bash
-   bash run.sh input-tests/your-file.txt
+   bash run.sh test-inputs/your-file.txt
    ```
