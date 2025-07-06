@@ -51,7 +51,7 @@ public class BikeSimAppTest {
     }
 
     @Test
-    void fileInputProcessing_invalid() throws Exception {
+    void fileInput_invalid() throws Exception {
         // Create temporary command file
         Path inputFile = Files.createTempFile("test", ".txt");
         Files.write(inputFile, Arrays.asList(
@@ -65,6 +65,33 @@ public class BikeSimAppTest {
         BikeSimApp.main(new String[]{inputFile.toString()});
 
         assertNotEquals("(2,2), NORTH", getLastReportOutput() );
+    }
+
+    @Test
+    void realInput1_valid() throws Exception {
+
+        // Execute main with file argument
+        BikeSimApp.main(new String[]{"test-inputs/example1.txt"});
+
+        assertEquals("(0,6), NORTH", getLastReportOutput() );
+    }
+
+    @Test
+    void realInput2_valid() throws Exception {
+
+        // Execute main with file argument
+        BikeSimApp.main(new String[]{"test-inputs/example2.txt"});
+
+        assertEquals("(0,0), WEST", getLastReportOutput() );
+    }
+
+    @Test
+    void realInput3_valid() throws Exception {
+
+        // Execute main with file argument
+        BikeSimApp.main(new String[]{"test-inputs/example3.txt"});
+
+        assertEquals("(3,3), NORTH", getLastReportOutput() );
     }
 
     @Test
