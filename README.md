@@ -19,6 +19,11 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 **Valid Directions**: NORTH, SOUTH, EAST, WEST  
 **Grid Boundaries**: X and Y coordinates must be between 0-6 inclusive
 
+## Mandatory Pre-Requisites:
+- Ensure Java is installed and is updated to the latest version.
+- Download through this link: https://www.java.com/en/download/manual.jsp
+
+
 ## How to Run For Non-Developers.
 Note that I do not usually upload artifacts, as it is not good practice. 
 However, I felt this would provide a smoother experience for non-developers to run the app.
@@ -35,8 +40,10 @@ e.g.
 4. Open your terminal app (Mac) or PowerShell (PC).
 
 5. Type 'cd ' in the command line and copy and paste your path, and enter
-e.g. cd /Users/your-name/Downloads/bike-sim-main/
-
+e.g.
+   ```bash
+   cd /Users/your-name/Downloads/bike-sim-main/
+   ```
 6. Run bash.sh
    ```bash
    java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp
