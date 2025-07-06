@@ -20,8 +20,8 @@ A Java application that simulates a bike moving on a 7x7 grid, preventing exits 
 **Grid Boundaries**: X and Y coordinates must be between 0-6 inclusive
 
 ## Mandatory Pre-Requisites:
-- Ensure Java is installed and is updated to the latest version.
-- Download through this link: https://www.java.com/en/download/manual.jsp
+- Ensure Java is installed and is updated to the latest version (at least 24).
+- Download through this link: https://www.oracle.com/au/java/technologies/downloads/
 
 
 ## How to Run For Non-Developers.
@@ -77,7 +77,7 @@ e.g.
    OR
    ```bash
    mvn clean install
-   dependency:copy-dependencies
+   mvn dependency:copy-dependencies
    mvn package
    ```
    
