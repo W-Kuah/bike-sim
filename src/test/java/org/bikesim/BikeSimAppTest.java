@@ -66,7 +66,6 @@ public class BikeSimAppTest {
 
         assertNotEquals("(2,2), NORTH", getLastReportOutput() );
     }
-
     @Test
     void realInput1_valid() throws Exception {
 
@@ -93,6 +92,7 @@ public class BikeSimAppTest {
 
         assertEquals("(3,3), NORTH", getLastReportOutput() );
     }
+
 
     @Test
     void stdinInput_valid() {
