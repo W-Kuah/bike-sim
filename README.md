@@ -48,11 +48,11 @@ e.g. cd /Users/your-name/Downloads/bike-sim-main/
    
 7. If you want to test a text file, try:
    ```bash
-   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp input-tests/example1.txt
+   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp test-inputs/example1.txt
    ```
 - If on Mac OSX, you can choose to run the following instead:
    ```bash
-   bash install.sh input-tests/example1.txt
+   bash install.sh test-inputs/example1.txt
    ```
 ## How to Run For Developers
 0. Ensure you have Maven installed (https://maven.apache.org/install.html)
@@ -75,11 +75,11 @@ e.g. cd /Users/your-name/Downloads/bike-sim-main/
    
 4. **Run with input file**
    ```bash
-   bash run.sh input-tests/example1.txt
+   bash run.sh test-inputs/example1.txt
    ```
    OR
    ```bash
-   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp input-tests/example1.txt
+   java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp test-inputs/example1.txt
    ```
    
    **...OR Read from STDIN**  
@@ -186,7 +186,7 @@ Sample test files are included in the test-inputs/ directory. Run with:
    ```bash
    bash run.sh test-inputs/example3.txt
    ```
-Alternatively, you may add your file to the input-tests.
+Alternatively, you may add your file to the test-inputs.
    ```bash
    bash run.sh test-inputs/your-file.txt
    ```
