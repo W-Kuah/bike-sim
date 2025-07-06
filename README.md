@@ -25,7 +25,7 @@ However, I felt this would provide a smoother experience for non-developers to r
 
 1. Navigate to this https://github.com/W-Kuah/bike-sim/
 2. Click on the 'Code' green button and download zip.
-3. Unzip the file and copy the name of the unzip folder to your clipboard.
+3. Unzip the file and copy the name of the unzipped folder to your clipboard.
 e.g.
 ```plaintext
 /Users/your-name/Downloads/bike-sim-main/
