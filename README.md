@@ -44,6 +44,7 @@ e.g.
    ```bash
    cd /Users/your-name/Downloads/bike-sim-main/
    ```
+- Make sure this is the directory that contains 'src' and not 'bike-sim-main' again.
 6. Run bash.sh
    ```bash
    java -cp target/bikeSim-1.0-SNAPSHOT.jar org.bikesim.BikeSimApp
