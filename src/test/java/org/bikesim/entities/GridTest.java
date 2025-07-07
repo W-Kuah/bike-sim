@@ -1,10 +1,6 @@
 package org.bikesim.entities;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,13 +9,13 @@ public class GridTest {
     @Test
     void testHeight_shouldBe9() {
         Grid grid = new Grid(3,9);
-        assertEquals(grid.getHeight(), 9);
+        assertEquals(grid.height(), 9);
     }
 
     @Test
     void testWidth_shouldBe9() {
         Grid grid = new Grid(1,4);
-        assertEquals(grid.getWidth(), 1);
+        assertEquals(grid.width(), 1);
     }
 
     @Test

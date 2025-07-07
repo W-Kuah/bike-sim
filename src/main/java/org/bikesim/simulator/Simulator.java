@@ -5,6 +5,10 @@ import org.bikesim.entities.Grid;
 import org.bikesim.enums.Direction;
 
 // Executes commands and interfaces between bike state and grid state.
+
+/**
+ *
+ */
 public class Simulator {
     private final Grid grid = new Grid(7, 7);
     private final Bike vehicle = new Bike();
