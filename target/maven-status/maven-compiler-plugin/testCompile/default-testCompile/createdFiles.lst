@@ -1,0 +1,6 @@
+org/bikesim/entities/BikeTest.class
+org/bikesim/enums/DirectionTest.class
+org/bikesim/entities/GridTest.class
+org/bikesim/BikeSimAppTest.class
+org/bikesim/simulator/SimulatorTest.class
+org/bikesim/parser/CommandParserTest.class
