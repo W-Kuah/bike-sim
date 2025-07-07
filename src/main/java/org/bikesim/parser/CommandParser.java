@@ -4,7 +4,16 @@ import org.bikesim.commands.*;
 import org.bikesim.enums.Direction;
 
 // Converts text to commands
+
+/**
+ * The class that validates and converts strings to commands
+ */
 public class CommandParser {
+    /**
+     * <p>Validates and converts strings to commands (PLACE, FORWARD, TURN_LEFT, TURN_RIGHT and GPS_REPORT)</p>
+     * @param input
+     * @return
+     */
     public Command parse(String input) {
         String normalized = input.trim().toUpperCase();
 
@@ -22,6 +31,11 @@ public class CommandParser {
         return null;
     }
 
+    /**
+     * <p>Validates and cleans the place string. If valid, return the placeCommand with user arguments (X, Y and direction)</p>
+     * @param input place string input from user
+     * @return the placeCommand(x,y,direction) or null depending on input validity
+     */
     private Command parsePlaceCommand(String input) {
         // Remove "PLACE" prefix and trim whitespace
         String paramsString = input.substring(5).trim();
