@@ -3,7 +3,6 @@ package org.bikesim.entities;
 import org.bikesim.enums.Direction;
 
 // Entity for bike, containing the bike's state and behavior
-
 /**
  * Entity for bike, containing state and behavior
  */

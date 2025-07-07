@@ -11,8 +11,8 @@ import org.bikesim.enums.Direction;
 public class CommandParser {
     /**
      * <p>Validates and converts strings to commands (PLACE, FORWARD, TURN_LEFT, TURN_RIGHT and GPS_REPORT)</p>
-     * @param input
-     * @return
+     * @param input string input from user
+     * @return command or null type depending on input validity
      */
     public Command parse(String input) {
         String normalized = input.trim().toUpperCase();

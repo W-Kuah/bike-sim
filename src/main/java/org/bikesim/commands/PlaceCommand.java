@@ -4,6 +4,10 @@ import org.bikesim.enums.Direction;
 import org.bikesim.simulator.Simulator;
 
 // Command logic for moving placement.
+
+/**
+ * Implements the command pattern to tell the simulator to place the vehicle with X Y and direction user inputs.
+ */
 public class PlaceCommand implements Command {
     /**
      * The x coordinate (or horizontal position) dictated by the user.
@@ -20,9 +24,9 @@ public class PlaceCommand implements Command {
 
     /**
      * <p>The constructor for this implement, sets the x y coordinate, and the direction to be used with the placeVehicle() function in the simulator.</p>
-     * @param x
-     * @param y
-     * @param direction
+     * @param x The x coordinate (or horizontal position) as dictated from user input.
+     * @param y The y coordinate (or vertical position) as dictated from user input.
+     * @param direction The direction as dictated from user input.
      */
     public PlaceCommand(int x, int y, Direction direction) {
         this.x = x;

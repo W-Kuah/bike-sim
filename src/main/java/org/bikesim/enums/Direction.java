@@ -6,9 +6,21 @@ package org.bikesim.enums;
  * Direction enum type containing 'NORTH', 'EAST', 'SOUTH', and 'WEST'
  */
 public enum Direction {
+    /**
+     * North direction
+     */
     NORTH,
+    /**
+     * East direction
+     */
     EAST,
+    /**
+     * South direction
+     */
     SOUTH,
+    /**
+     * West direction
+     */
     WEST;
 
     /**
