@@ -1,12 +1,20 @@
 package org.bikesim.enums;
 
 //Provides type for direction
+
+/**
+ * Direction enum type containing 'NORTH', 'EAST', 'SOUTH', and 'WEST'
+ */
 public enum Direction {
     NORTH,
     EAST,
     SOUTH,
     WEST;
 
+    /**
+     * <p>Turn left</p>
+     * @return different direction based on current direction
+     */
     public Direction left() {
         return switch (this) {
             case NORTH -> WEST;
@@ -16,6 +24,10 @@ public enum Direction {
         };
     }
 
+    /**
+     * <p>Turn Right</p>
+     * @return different direction based on current direction
+     */
     public Direction right() {
         return switch (this) {
             case NORTH -> EAST;
